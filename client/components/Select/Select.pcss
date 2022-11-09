@@ -1,0 +1,23 @@
+.select {
+  @apply block appearance-none w-full bg-grey-lighter border border-grey-lighter text-grey-darker py-3 px-4 pr-8 mb-8 rounded leading-tight;
+
+  &:focus {
+    @apply bg-white border-grey outline-none;
+  }
+}
+
+.select-arrow {
+  @apply pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker;
+}
+
+.select-svg {
+  @apply fill-current h-4 w-4;
+}
+
+.select-wrapper {
+  @apply relative;
+}
+
+.select-label {
+  @apply block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2;
+}

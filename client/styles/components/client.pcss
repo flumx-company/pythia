@@ -1,0 +1,16 @@
+.client-list-item-link {
+  @apply text-sm text-grey-darker pl-2 cursor-pointer;
+
+  &:hover {
+    @apply text-grey-darkest;
+  }
+}
+
+.client-list-item-copy {
+  @apply ml-1 mt-1 text-xs opacity-0;
+  transition: opacity .2s;
+
+  &.copy-visible {
+    @apply opacity-100;
+  }
+}

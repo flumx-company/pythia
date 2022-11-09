@@ -1,0 +1,5 @@
+{
+  "uid": "pythia-core",
+  "append": true,
+  "script": "build/server.js"
+}

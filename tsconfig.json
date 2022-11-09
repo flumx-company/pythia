@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "lib": [
+      "es2017",
+      "esnext.asynciterable"
+    ],
+    "module": "commonjs",
+    "outDir": "./build",
+    "rootDir": "./",
+    "target": "ES2017"
+  },
+  "exclude": [
+    "./build/**/*",
+    "./client/**/*",
+    "node_modules"
+  ],
+  "include": [
+    "./**/*"
+  ]
+}

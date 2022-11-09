@@ -1,0 +1,64 @@
+.button {
+  @apply text-white py-3 px-6 rounded-sm font-semibold bg-grey;
+
+  &.button-primary {
+    @apply bg-blue;
+
+    &:hover {
+      @apply bg-blue-dark;
+    }
+  }
+
+  &.button-secondary {
+    @apply text-blue bg-white;
+
+    &:hover {
+      @apply text-blue-dark;
+    }
+  }
+
+  &.button-danger {
+    @apply bg-red;
+
+    &:hover {
+      @apply bg-red-dark;
+    }
+  }
+
+  &.button-success {
+    @apply bg-green;
+
+    &:hover {
+      @apply bg-green-dark;
+    }
+  }
+
+  &.button-sm {
+    @apply text-sm py-2 px-4;
+  }
+
+  &.button-xs {
+    @apply text-xs py-2 px-3;
+  }
+
+  &.button-disabled,
+  &[disabled] {
+    @apply opacity-50 pointer-events-none;
+  }
+
+  &.button-inverted {
+    @apply bg-transparent text-black;
+
+    &:hover {
+      @apply bg-transparent;
+    }
+
+    &.button-danger {
+      @apply text-red;
+
+      &:hover {
+        @apply text-red-dark;
+      }
+    }
+  }
+}

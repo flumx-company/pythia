@@ -1,0 +1,20 @@
+{
+  "services": {
+    "watson": {
+      "discovery": {
+        "apiVersion": "v1",
+        "apiVersionDate": "2019-03-25"
+      },
+      "nlu": {
+        "apiVersion": "v1",
+        "apiVersionDate": "2018-03-16"
+      }
+    }
+  },
+  "db": {
+    "name": "metabot",
+    "username": "postgres",
+    "password": "postgres",
+    "host": "localhost"
+  }
+}

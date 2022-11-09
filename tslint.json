@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint-eslint-rules",
+    "tslint-microsoft-contrib/recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "client"
+    ]
+  },
+  "rulesDirectory": ["node_modules/tslint-microsoft-contrib"],
+  "rules": {
+    "align": false,
+    "export-name": false,
+    "indent": [true, "spaces", 2],
+    "max-line-length": {
+      "severity": "warning",
+      "options": [
+        130
+      ]
+    },
+    "jsx-self-close": false,
+    "import-name": false,
+    "max-func-body-length": 200,
+    "no-increment-decrement": false,
+    "prefer-type-cast": false,
+    "ter-arrow-parens": [
+      true,
+      "as-needed"
+    ],
+    "ter-indent": [true, 2],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case"
+    ],
+    "no-shadowed-variable": true,
+    "no-suspicious-comment": false,
+    "no-unused-variable": true,
+    "underscore-consistent-invocation": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "server": {
+    "host": "pythia.cc",
+    "port": 8080,
+    "ssl": true
+  },
+  "logging": {
+    "filePath": "/var/log/pythia/output.log",
+    "isRelative": false,
+    "loggly": {
+      "token": "e3f58204-227b-470e-b76c-5f4e352bc973",
+      "subdomain": "pythia"
+    }
+  }
+}

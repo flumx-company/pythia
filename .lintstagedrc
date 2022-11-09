@@ -1,0 +1,8 @@
+{
+  "linters": {
+    "*.js": ["eslint --fix", "git add"],
+    "client/**/*.{ts,tsx}": ["npm run lint:client --", "git add"],
+    "!(client)/**/*.{ts,tsx}": ["npm run lint:server --", "git add"]
+  },
+  "ignore": ["build/*.js"]
+}

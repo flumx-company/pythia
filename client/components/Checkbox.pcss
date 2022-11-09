@@ -1,0 +1,46 @@
+.checkbox {
+  @apply absolute opacity-0;
+
+  & + label {
+    @apply cursor-pointer relative p-0 flex items-center;
+  }
+
+  & + label::before {
+    @apply bg-grey-light inline-block;
+    content: '';
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:checked + label::before {
+    @apply bg-blue;
+  }
+
+  &:disabled + label {
+    @apply cursor-auto;
+    color: #b8b8b8;
+  }
+
+  &:disabled + label::before {
+    @apply shadow-none;
+    background: #ddd;
+  }
+
+  &:checked + label::after {
+    @apply absolute bg-white;
+    content: '';
+    left: 5px;
+    top: 10px;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+      2px 0 0 white,
+      4px 0 0 white,
+      4px -2px 0 white,
+      4px -4px 0 white,
+      4px -6px 0 white,
+      4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+}

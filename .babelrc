@@ -1,0 +1,25 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "modules": false, "targets": "> 1%, not dead, not IE 11, not OperaMini all" }],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "alias": {
+        "@": "./client",
+      }
+    }],
+    ["react-css-modules", {
+      "webpackHotModuleReloading": true,
+      "filetypes": {
+        ".pcss": {
+          "syntax": ""
+        }
+      },
+      "attributeNames": {
+        "activeStyleName": "activeClassName"
+      }
+    }],
+    "react-hot-loader/babel"
+  ]
+}

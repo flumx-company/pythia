@@ -1,0 +1,11 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 5000,
+    "ssl": false
+  },
+  "logging": {
+    "filePath": "tmp/output.log",
+    "isRelative": true
+  }
+}

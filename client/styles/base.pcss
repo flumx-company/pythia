@@ -1,0 +1,44 @@
+body {
+  @apply font-sans leading-normal text-black;
+}
+
+main, #app {
+  height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px auto;
+}
+
+#logo, #sidebar {
+  @apply .bg-grey-darkest;
+}
+
+#modals {
+  position: relative;
+  z-index: 999;
+}
+
+.modal-backdrop {
+  @apply fixed h-full w-full pin-t pin-l flex items-center justify-center;
+  background-color: hsla(0, 0%, 0%, .5);
+}
+
+.modal {
+  @apply bg-white px-6 py-4;
+}
+
+.page-title {
+  @apply text-2xl font-bold mb-2;
+}
+
+.pt-link {
+  @apply text-blue no-underline;
+
+  &:hover {
+    @apply text-blue-dark;
+  }
+}

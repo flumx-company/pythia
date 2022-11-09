@@ -1,0 +1,21 @@
+.table {
+  @apply w-full;
+}
+
+.table-cell {
+  @apply p-2;
+}
+
+.table-head {
+  & .table-row {
+    @apply text-left border-blue-light border-b-4;
+
+    & .table-cell {
+      @apply py-4;
+    }
+  }
+}
+
+.table-row-odd {
+  @apply bg-grey-lighter;
+}
